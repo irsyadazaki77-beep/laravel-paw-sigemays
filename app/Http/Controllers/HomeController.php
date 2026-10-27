@@ -15,26 +15,26 @@ class HomeController extends Controller
             'teamMembers' => [
                 [
                     'name' => 'Zaki Irsyada Putra',
-                    'role' => 'Mahasiswa A (Project Lead & Home Portal)',
+                    'role' => 'Mahasiswa A (Project Leader & Home Portal)',
                     'branch' => 'zaki',
                     'status' => 'Lead'
                 ],
                 [
-                    'name' => 'Demyan',
+                    'name' => 'M Nabil Alhakim',
                     'role' => 'Mahasiswa B (Data CRUD Module)',
-                    'branch' => 'demyan',
+                    'branch' => 'nabil',
                     'status' => 'Member'
                 ],
                 [
-                    'name' => 'Daniel H',
+                    'name' => 'Daniel Harley Kamasaan',
                     'role' => 'Mahasiswa C (Auth & User Profile)',
                     'branch' => 'daniel',
                     'status' => 'Member'
                 ],
                 [
-                    'name' => 'Mahasiswa D',
+                    'name' => 'Deva Mahendra Putra',
                     'role' => 'Mahasiswa D (Reports & Feedback Module)',
-                    'branch' => 'mahasiswa-d',
+                    'branch' => 'deva',
                     'status' => 'Member'
                 ]
             ]
