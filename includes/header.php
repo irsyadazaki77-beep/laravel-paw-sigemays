@@ -57,6 +57,7 @@ $monthNames = [1 => 'Januari', 2 => 'Februari', 3 => 'Maret', 4 => 'April', 5 =>
     </div>
     <header><h1>Data Mahasiswa</h1></header>
     <nav aria-label="Navigasi utama">
+        <a href="index.php" style="background: #4f46e5; color: #ffffff; font-weight: bold;">📊 Dashboard Tim</a>
         <a href="student_view.php">Tampil</a>
         <a href="student_add.php">Tambah</a>
         <a href="logout.php">Logout (<?= e($_SESSION['username'] ?? 'User') ?>)</a>
