@@ -1,58 +1,40 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Project Kolaborasi PHP CRUD MySQL - Kelompok Si Gemays
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Mata Kuliah:** Praktikum Pengembangan Aplikasi Web (PAW)  
+**Modul 06:** Version Control System (Git & GitHub)  
+**Program Studi:** S1 Sistem Informasi - Telkom University Surabaya (Tahun 2026)
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 👥 Profil Anggota Kelompok & Pembagian Tugas:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+| No | Nama Mahasiswa | NIM / Akun | Peran / Modul Kolaborasi | Branch Git |
+|:--:|:---|:---|:---|:---:|
+| 1 | **Zaki Irsyada Putra** | **108052500069** *(Lead)* | Inisiasi Repository, Setup Base Project PHP, Banner Informasi Tim, & Modul Tampil Data (`student_view.php`) | `zaki` |
+| 2 | **M Nabil Alhakim** | Mahasiswa B | Modul Tambah Data Mahasiswa (`student_add.php`) & Validasi Input | `nabil` |
+| 3 | **Daniel Harley Kamasaan** | Mahasiswa C | Modul Autentikasi Pengguna (`login.php`, `logout.php`) & Session Guard | `daniel` |
+| 4 | **Deva Mahendra Putra** | Mahasiswa D | Modul Manajemen Pengubahan (`student_edit.php`) & Penghapusan (`student_delete.php`) | `deva` |
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📂 Struktur Direktori Project (Native PHP & MySQL):
+- `config.php`: Konfigurasi parameter koneksi database MySQL.
+- `connection.php`: Inisialisasi koneksi MySQLi dengan penanganan error.
+- `generate.php`: Generator otomatis database `kampusku` dan tabel `student` & `admin`.
+- `index.php`: Gerbang utama routing session (mengarahkan ke login atau student_view).
+- `login.php` & `logout.php`: Modul otentikasi admin.
+- `student_view.php`: Menampilkan daftar seluruh data mahasiswa dalam tabel.
+- `student_add.php`: Formulir penambahan mahasiswa baru dengan validasi data.
+- `student_edit.php`: Formulir pengubahan data mahasiswa yang sudah ada.
+- `student_delete.php`: Proses penghapusan data mahasiswa dengan proteksi CSRF.
+- `assets/`: Berisi file styling CSS (`style.css` dan `login.css`).
+- `includes/`: Template parsial (`header.php`, `footer.php`, `bootstrap.php`, `functions.php`, `student_form_fields.php`).
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🚀 Alur Kerja Kolaborasi Git:
+1. **Inisiasi Awal (Mahasiswa A):** Setup repository, push branch `master`, dan undang anggota tim sebagai Collaborator di GitHub.
+2. **Clone & Percabangan (Mahasiswa B, C, D):** Menggandakan repository dan membuat branch sesuai nama masing-masing (`git checkout -b <nama>`).
+3. **Pengerjaan Modul & Push:** Masing-masing anggota menyelesaikan modul pada branch masing-masing lalu melakukan `git push origin <nama-branch>`.
+4. **Pull Request & Code Review:** Mengajukan Pull Request ke branch `master` di GitHub, me-review perubahan, dan melakukan merge.
+5. **Sinkronisasi Kode (Semua Anggota):** Seluruh anggota menarik pembaruan kode terbaru ke lokal melalui `git pull origin master`.
